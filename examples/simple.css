@@ -1,0 +1,203 @@
+.mx-mask {
+  position: relative;
+  width: auto;
+  margin: 10px;
+}
+.mx-mask-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #373737;
+  background-color: rgba(55, 55, 55, 0.6);
+  height: 100%;
+  filter: alpha(opacity=50);
+  z-index: 1050;
+}
+.mx-mask-mask-hidden {
+  display: none;
+}
+.mx-mask-fade-enter,
+.mx-mask-fade-appear {
+  opacity: 0;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+          animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.mx-mask-fade-leave {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+          animation-timing-function: cubic-bezier(0.55, 0, 0.55, 0.2);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.mx-mask-fade-enter.mx-mask-fade-enter-active,
+.mx-mask-fade-appear.mx-mask-fade-appear-active {
+  -webkit-animation-name: mxMaskFadeIn;
+          animation-name: mxMaskFadeIn;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.mx-mask-fade-leave.mx-mask-fade-leave-active {
+  -webkit-animation-name: mxMaskFadeOut;
+          animation-name: mxMaskFadeOut;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes mxMaskFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mxMaskFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes mxMaskFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes mxMaskFadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.mx-mask-wrap {
+  position: fixed;
+  overflow: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.mx-mask-zoom-enter,
+.mx-mask-zoom-appear {
+  opacity: 0;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+          animation-timing-function: cubic-bezier(0.08, 0.82, 0.17, 1);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.mx-mask-zoom-leave {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+          animation-timing-function: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+.mx-mask-zoom-enter.mx-mask-zoom-enter-active,
+.mx-mask-zoom-appear.mx-mask-zoom-appear-active {
+  -webkit-animation-name: mxMaskZoomIn;
+          animation-name: mxMaskZoomIn;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+.mx-mask-zoom-leave.mx-mask-zoom-leave-active {
+  -webkit-animation-name: mxMaskZoomOut;
+          animation-name: mxMaskZoomOut;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+@-webkit-keyframes mxMaskZoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes mxMaskZoomIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes mxMaskZoomOut {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+}
+@keyframes mxMaskZoomOut {
+  0% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0, 0);
+            transform: scale(0, 0);
+  }
+}
+.button {
+  display: inline-block;
+  margin: 20px;
+  background-color: skyblue;
+  color: whitesmoke;
+  padding: 20px;
+}
+.content {
+  display: block;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-color: whitesmoke;
+  position: absolute;
+  width: 40%;
+  height: 200px;
+  margin-left: 30%;
+  margin-top: 100px;
+  line-height: 200px;
+  text-align: center;
+  font-size: -webkit-xxx-large;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=simple.css.map*/
