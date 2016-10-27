@@ -1,0 +1,58 @@
+{
+  "name": "react-mask-layer",
+  "version": "1.0.2",
+  "description": "Animatable mask layer, to hold anything you want.",
+  "keywords": [
+    "react",
+    "react-component",
+    "react-mask-layer",
+    "mask-layer"
+  ],
+  "files": [
+    "lib",
+    "assets/*.css"
+  ],
+  "homepage": "https://github.com/alcat2008/react-mask-layer#readme",
+  "author": "alcat2008",  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alcat2008/react-mask-layer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alcat2008/react-mask-layer/issues"
+  },
+  "license": "MIT",
+
+  "main":"./lib/index",
+  "config":{
+    "port": 8000
+  },
+  "scripts": {
+    "build": "rc-tools run build",
+    "gh-pages": "rc-tools run gh-pages",
+    "start": "rc-tools run server",
+    "pub": "rc-tools run pub --babel-runtime",
+    "lint": "rc-tools run lint",
+    "karma": "rc-tools run karma",
+    "saucelabs": "rc-tools run saucelabs",
+    "test": "rc-tools run test",
+    "chrome-test": "rc-tools run chrome-test",
+    "coverage": "rc-tools run coverage"
+  },
+  "dependencies": {
+    "add-dom-event-listener": "^1.0.1",
+    "rc-animate": "^2.3.1",
+    "babel-runtime": "6.x"
+  },
+  "devDependencies": {
+    "expect.js": "0.3.x",
+    "pre-commit": "1.x",
+    "object-assign": "4.x",
+    "rc-tools": "5.x",
+    "react": "15.x",
+    "react-addons-test-utils": "15.x",
+    "react-dom": "15.x"
+  },
+  "pre-commit": [
+    "lint"
+  ]
+}
