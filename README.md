@@ -9,8 +9,9 @@ Animatable mask layer, to hold anything you want.
 ## Usage
 
 ```javascript
+
 import MaskLayer from 'react-mask-layer';
-import 'react-mask-layer/style/index.less';
+import 'react-mask-layer/assets/index.css';
 
 class App extends Component {
   constructor(props) {
