@@ -1,6 +1,6 @@
 {
   "name": "react-mask-layer",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Animatable mask layer, to hold anything you want.",
   "keywords": [
     "react",
@@ -10,7 +10,8 @@
   ],
   "files": [
     "lib",
-    "assets/*.css"
+    "assets/*.css",
+    "assets/*.less"
   ],
   "homepage": "https://github.com/alcat2008/react-mask-layer#readme",
   "author": "alcat2008",  "repository": {
